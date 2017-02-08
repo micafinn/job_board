@@ -11,10 +11,11 @@ class JobsController < ApplicationController
   end
 
   def create
-    p "In the create method!!!!!"
     Job.create(job_params)
-    p job
     redirect_to jobs_path
+  end
+
+  def edit
   end
 
   private
