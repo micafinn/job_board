@@ -2,9 +2,10 @@ class JobsController < ApplicationController
   def index
   end
 
-  def show
+  def new
+    @job = Job.new
   end
 
-  def new
+  def show
   end
 end
